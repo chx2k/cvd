@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+
+<addon id="script.cosmitv.service" name="CosmiTV Service" version="1.2.2" provider-name="anon">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.service" library="ctvservice.py" start="login">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CosmiTV Service</summary>
+  </extension>
+</addon>
+<addon id="script.wizard.ctv" version="1.0.10" name="CosmiTV Config Wizard" provider-name="anon">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>CosmiTV Configuration Wizard</summary>
+		<description>Instantly configure your TV Box experience with all the best add-ons and goodies!  </description>
+		<website></website>
+		<platform>all</platform>
+	</extension>
+</addon>
+</addons>
